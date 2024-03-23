@@ -1,0 +1,30 @@
+
+
+
+body {
+	background-color:#87AAAA;
+	color: #fff;
+	font: 100% 'Lato', sans-serif;
+	font-size: 100px;
+	font-weight: 300;}
+
+a {
+	color: white;
+	text-decoration: none; }
+  
+h3 {
+	margin-bottom: 1%;}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	line-height: 50px;}
+  
+li{
+	a:hover;
+		color: #fff;}
+  
+.center
+{text-align: center;}
+    
