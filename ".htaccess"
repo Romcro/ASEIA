@@ -1,0 +1,20 @@
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+#custom error docs
+ErrorDocument 404 /introuvable.php
+ErrorDocument 403 /nonautorise.php
+ErrorDocument 500 /erreur.php
+
+<IfModule mod_expires.c>
+          ExpiresActive on
+          ExpiresByType image/jpg "access plus 20 days"
+          ExpiresByType image/png "access plus 20 days"
+          ExpiresByType image/gif "access plus 20 days"
+          ExpiresByType image/jpeg "access plus 20 days"
+          ExpiresByType text/css "access plus 1 week"
+          ExpiresByType application/x-javascript "access plus 1 week"
+          ExpiresByType application/javascript "access plus 1 week"
+</IfModule>
+
